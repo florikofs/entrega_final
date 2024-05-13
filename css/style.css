@@ -1,0 +1,169 @@
+@font-face {
+  font-family: font-main;
+  src: url("../resources/fonts/Barlow-Regular.ttf"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+@keyframes entrada {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.03); }
+  100% {
+    transform: scale(1); } }
+
+.tapa_anima1 {
+  animation-name: entrada;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 0s; }
+
+.tapa_anima2 {
+  animation-name: entrada;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s; }
+
+.tapa_anima3 {
+  animation-name: entrada;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 1s; }
+
+h1,
+h2 {
+  font-family: font-main, serif; }
+
+main {
+  padding: 60px; }
+
+button {
+  color: white;
+  border: none;
+  background-color: #005cb3;
+  border-radius: 10px;
+  padding: 10px 30PX;
+  font-weight: 600; }
+  button:hover {
+    background-color: #003f79; }
+
+nav {
+  border-bottom: 2px #d8d8d8 solid;
+  padding: 0px 40px !important; }
+  nav .container-fluid a {
+    font-family: font-main, serif;
+    font-weight: 800; }
+  nav .container-fluid .navbar-nav li {
+    margin: 20px;
+    font-size: 18px; }
+    nav .container-fluid .navbar-nav li .nav-link {
+      text-transform: uppercase; }
+    nav .container-fluid .navbar-nav li .nav-link.active {
+      color: #005cb3; }
+
+footer {
+  font-size: 12px;
+  padding: 20px;
+  border-top: 1px solid #d8d8d8; }
+
+.home_main {
+  color: white;
+  height: 100vh;
+  padding: 60PX;
+  display: flex;
+  align-items: center;
+  background-image: url("../resources/space2.jpg");
+  background-size: cover;
+  background-position: center; }
+  .home_main .home_button {
+    color: white;
+    border: solid 1px white;
+    background-color: #51515125;
+    border-radius: 10px;
+    padding: 10px 30PX;
+    font-weight: 600; }
+    .home_main .home_button:hover {
+      background-color: rgba(255, 255, 255, 0.074); }
+
+.autor_main {
+  padding: 0; }
+  .autor_main .autor_div {
+    display: flex; }
+    .autor_main .autor_div div img {
+      width: 400px; }
+    .autor_main .autor_div .autor_div_text {
+      padding: 40px 20px;
+      max-width: 650px; }
+
+.trilogia_main {
+  background-color: black;
+  padding: 60px 60px 80px 60px; }
+  .trilogia_main .trilogia_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .trilogia_main .trilogia_div .card {
+      border: none;
+      margin: 20px; }
+      .trilogia_main .trilogia_div .card .card-body {
+        padding: 20px; }
+        .trilogia_main .trilogia_div .card .card-body h5 {
+          font-family: font-main, serif;
+          font-weight: bolder; }
+
+.eventos_main {
+  padding-bottom: 0; }
+  .eventos_main .eventos-prox {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin-top: 40px; }
+    .eventos_main .eventos-prox .eventos_card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 1px 1px 5px 3px #51515125;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 0px 30px 30px 0px;
+      width: 250px; }
+      .eventos_main .eventos-prox .eventos_card h3 {
+        font-family: font-main, serif;
+        font-weight: 700; }
+      .eventos_main .eventos-prox .eventos_card p {
+        text-align: left;
+        margin-bottom: 0; }
+      .eventos_main .eventos-prox .eventos_card .subinfo {
+        color: #808080;
+        font-size: 20px; }
+
+@media (max-width: 900px) {
+  .eventos-prox {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 600px) {
+  .eventos-prox {
+    grid-template-columns: repeat(1, 1fr); } }
+
+.contacto_body {
+  display: grid;
+  grid-template-columns: 500px 400px; }
+  .contacto_body .contacto_form {
+    margin-left: 30px; }
+
+@media (max-width: 960px) {
+  .contacto_body {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 960px) {
+  .contacto_form {
+    margin-left: 0px;
+    max-width: 400px; } }

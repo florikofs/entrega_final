@@ -1,0 +1,22 @@
+h1,
+h2 {
+    font-family: font-main, serif;
+}
+
+main {
+    padding: 60px;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: $maincolor;
+    border-radius: 10px;
+    padding: 10px 30PX;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $maincolordark;
+    }
+}
+

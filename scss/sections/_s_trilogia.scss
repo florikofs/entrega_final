@@ -1,0 +1,25 @@
+.trilogia_main {
+    background-color: black;
+    padding: 60px 60px 80px 60px;
+
+    .trilogia_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .card {
+            border: none;
+            margin: 20px;
+
+            .card-body {
+                padding: 20px;
+
+                h5 {
+                    font-family: font-main, serif;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

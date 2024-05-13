@@ -1,0 +1,35 @@
+// TIMELINE
+@keyframes entrada {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// ANIMACIONES
+@mixin plop ($delay){
+    animation-name: entrada;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-delay: $delay;
+}
+
+.tapa_anima1 {
+    @include plop (0s);
+}
+
+.tapa_anima2 {
+    @include plop (0.5s);
+}
+
+.tapa_anima3 {
+    @include plop (1s);
+}
