@@ -73,6 +73,8 @@ header {
       header .navbar_box nav .container-fluid a {
         font-family: font-main, serif;
         font-weight: 800; }
+      header .navbar_box nav .container-fluid .navbar-brand {
+        margin-right: 4em; }
       header .navbar_box nav .container-fluid .navbar-nav li {
         margin: 20px;
         font-size: 18px; }
