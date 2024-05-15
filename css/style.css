@@ -98,9 +98,8 @@ footer {
   background-size: cover;
   background-position: center; }
   .home_main div {
-    display: block;
-    align-items: left;
-    max-width: 1400px; }
+    max-width: 700px;
+    margin-left: 5%; }
     .home_main div p {
       font-size: 20px;
       font-weight: lighter;
