@@ -1,12 +1,22 @@
 .home_main {
     color: white;
     height: 100vh;
-    padding: 60PX;
+    padding: 0px 60px;
     display: flex;
     align-items: center;
     background-image: url('../resources/space2.jpg');
     background-size: cover;
     background-position: center;
+
+    div {
+        max-width: 700px;
+
+        p {
+            font-size: 20px;
+            font-weight: lighter;
+            padding: 20px 0px;
+        }
+    }
 
     .home_button {
         color: white;
@@ -21,4 +31,3 @@
         }
     }
 }
-

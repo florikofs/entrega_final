@@ -1,6 +1,23 @@
+main{
+    display: block;
+    align-items: center;
+}
+
 h1,
 h2 {
     font-family: font-main, serif;
+}
+
+p{
+    font-size: 16px;
+}
+
+.txt_destacado{
+    color: $maincolor;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: font-main;
 }
 
 main {

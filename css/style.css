@@ -36,9 +36,23 @@
   animation-duration: 0.5s;
   animation-delay: 1s; }
 
+main {
+  display: block;
+  align-items: center; }
+
 h1,
 h2 {
   font-family: font-main, serif; }
+
+p {
+  font-size: 16px; }
+
+.txt_destacado {
+  color: #005cb3;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: font-main; }
 
 main {
   padding: 60px; }
@@ -75,12 +89,18 @@ footer {
 .home_main {
   color: white;
   height: 100vh;
-  padding: 60PX;
+  padding: 0px 60px;
   display: flex;
   align-items: center;
   background-image: url("../resources/space2.jpg");
   background-size: cover;
   background-position: center; }
+  .home_main div {
+    max-width: 700px; }
+    .home_main div p {
+      font-size: 20px;
+      font-weight: lighter;
+      padding: 20px 0px; }
   .home_main .home_button {
     color: white;
     border: solid 1px white;
@@ -96,7 +116,7 @@ footer {
   .autor_main .autor_div {
     display: flex; }
     .autor_main .autor_div div img {
-      width: 400px; }
+      height: 90vh; }
     .autor_main .autor_div .autor_div_text {
       padding: 40px 20px;
       max-width: 650px; }
