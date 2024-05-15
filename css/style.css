@@ -36,10 +36,6 @@
   animation-duration: 0.5s;
   animation-delay: 1s; }
 
-main {
-  display: block;
-  align-items: center; }
-
 h1,
 h2 {
   font-family: font-main, serif; }
@@ -52,7 +48,7 @@ p {
   font-size: 18px;
   font-weight: bold;
   font-style: italic;
-  font-family: font-main; }
+  font-family: font-main, serif; }
 
 main {
   padding: 60px; }
@@ -67,19 +63,23 @@ button {
   button:hover {
     background-color: #003f79; }
 
-nav {
-  border-bottom: 2px #d8d8d8 solid;
-  padding: 0px 40px !important; }
-  nav .container-fluid a {
-    font-family: font-main, serif;
-    font-weight: 800; }
-  nav .container-fluid .navbar-nav li {
-    margin: 20px;
-    font-size: 18px; }
-    nav .container-fluid .navbar-nav li .nav-link {
-      text-transform: uppercase; }
-    nav .container-fluid .navbar-nav li .nav-link.active {
-      color: #005cb3; }
+header {
+  background-color: #f8f9fa;
+  border-bottom: 2px #d8d8d8 solid; }
+  header .navbar_box {
+    margin: 0 5%; }
+    header .navbar_box nav {
+      padding: 0px 40px !important; }
+      header .navbar_box nav .container-fluid a {
+        font-family: font-main, serif;
+        font-weight: 800; }
+      header .navbar_box nav .container-fluid .navbar-nav li {
+        margin: 20px;
+        font-size: 18px; }
+        header .navbar_box nav .container-fluid .navbar-nav li .nav-link {
+          text-transform: uppercase; }
+        header .navbar_box nav .container-fluid .navbar-nav li .nav-link.active {
+          color: #005cb3; }
 
 footer {
   font-size: 12px;
@@ -96,7 +96,9 @@ footer {
   background-size: cover;
   background-position: center; }
   .home_main div {
-    max-width: 700px; }
+    display: block;
+    align-items: left;
+    max-width: 1400px; }
     .home_main div p {
       font-size: 20px;
       font-weight: lighter;

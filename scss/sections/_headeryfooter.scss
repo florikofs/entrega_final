@@ -1,31 +1,39 @@
 // NAVBAR
-nav {
+header {
+    background-color: $whitish0;
     border-bottom: 2px $whitish solid;
-    padding: 0px 40px !important;
 
-    .container-fluid {
-        a {
-            font-family: font-main, serif;
-            font-weight: 800;
-        }
+    .navbar_box {
+        margin: 0 5%;
 
-        .navbar-nav {
-            li {
-                margin: 20px;
-                font-size: 18px;
+        nav {
+            padding: 0px 40px !important;
 
-                .nav-link {
-                    text-transform: uppercase;
+            .container-fluid {
+                a {
+                    font-family: font-main, serif;
+                    font-weight: 800;
                 }
 
-                .nav-link.active {
-                    color: $maincolor;
+                .navbar-nav {
+                    li {
+                        margin: 20px;
+                        font-size: 18px;
+
+                        .nav-link {
+                            text-transform: uppercase;
+                        }
+
+                        .nav-link.active {
+                            color: $maincolor;
+                        }
+                    }
                 }
             }
         }
+
     }
 }
-
 
 // FOOTER
 footer {

@@ -1,8 +1,4 @@
-main{
-    display: block;
-    align-items: center;
-}
-
+// ESTILOS TEXTOS
 h1,
 h2 {
     font-family: font-main, serif;
@@ -17,9 +13,10 @@ p{
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
-    font-family: font-main;
+    font-family: font-main, serif;
 }
 
+// ESTILOS ELEMENTOS
 main {
     padding: 60px;
 }
