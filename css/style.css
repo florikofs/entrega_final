@@ -43,6 +43,10 @@ h2 {
 p {
   font-size: 16px; }
 
+.container {
+  max-width: 992px;
+  padding: 0; }
+
 .txt_destacado {
   color: #005cb3;
   font-size: 18px;
@@ -66,21 +70,19 @@ button {
 header {
   background-color: #f8f9fa;
   border-bottom: 2px #d8d8d8 solid; }
-  header .navbar_box {
-    margin: 0 5%; }
-    header .navbar_box nav {
-      padding: 0px 40px !important; }
-      header .navbar_box nav .container-fluid a {
+  header nav {
+    padding: 0px 40px !important; }
+    header nav .container-fluid {
+      max-width: 992px; }
+      header nav .container-fluid a {
         font-family: font-main, serif;
         font-weight: 800; }
-      header .navbar_box nav .container-fluid .navbar-brand {
-        margin-right: 4em; }
-      header .navbar_box nav .container-fluid .navbar-nav li {
+      header nav .container-fluid .navbar-nav li {
         margin: 20px;
         font-size: 18px; }
-        header .navbar_box nav .container-fluid .navbar-nav li .nav-link {
+        header nav .container-fluid .navbar-nav li .nav-link {
           text-transform: uppercase; }
-        header .navbar_box nav .container-fluid .navbar-nav li .nav-link.active {
+        header nav .container-fluid .navbar-nav li .nav-link.active {
           color: #005cb3; }
 
 footer {
@@ -114,15 +116,13 @@ footer {
     .home_main .home_button:hover {
       background-color: rgba(255, 255, 255, 0.074); }
 
-.autor_main {
-  padding: 0; }
-  .autor_main .autor_div {
-    display: flex; }
-    .autor_main .autor_div div img {
-      height: 90vh; }
-    .autor_main .autor_div .autor_div_text {
-      padding: 40px 20px;
-      max-width: 650px; }
+.container .autor_div {
+  display: flex; }
+  .container .autor_div div img {
+    height: 90vh; }
+  .container .autor_div .autor_div_text {
+    padding: 40px 20px;
+    max-width: 650px; }
 
 .trilogia_main {
   background-color: black;

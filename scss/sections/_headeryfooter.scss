@@ -3,40 +3,34 @@ header {
     background-color: $whitish0;
     border-bottom: 2px $whitish solid;
 
-    .navbar_box {
-        margin: 0 5%;
+    nav {
+        padding: 0px 40px !important;
 
-        nav {
-            padding: 0px 40px !important;
+        .container-fluid {
+            max-width: 992px;
+            
+            a {
+                font-family: font-main, serif;
+                font-weight: 800;
+            }
 
-            .container-fluid {
-                a {
-                    font-family: font-main, serif;
-                    font-weight: 800;
-                }
+            .navbar-nav {
+                li {
+                    margin: 20px;
+                    font-size: 18px;
 
-                .navbar-brand {
-                    margin-right: 4em;
-                }
+                    .nav-link {
+                        text-transform: uppercase;
+                    }
 
-                .navbar-nav {
-                    li {
-                        margin: 20px;
-                        font-size: 18px;
-
-                        .nav-link {
-                            text-transform: uppercase;
-                        }
-
-                        .nav-link.active {
-                            color: $maincolor;
-                        }
+                    .nav-link.active {
+                        color: $maincolor;
                     }
                 }
             }
         }
-
     }
+
 }
 
 // FOOTER

@@ -4,11 +4,16 @@ h2 {
     font-family: font-main, serif;
 }
 
-p{
+p {
     font-size: 16px;
 }
 
-.txt_destacado{
+.container {
+    max-width: 992px;
+    padding: 0;
+}
+
+.txt_destacado {
     color: $maincolor;
     font-size: 18px;
     font-weight: bold;
@@ -33,4 +38,3 @@ button {
         background-color: $maincolordark;
     }
 }
-
