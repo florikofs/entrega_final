@@ -43,9 +43,10 @@ h2 {
 p {
   font-size: 16px; }
 
-.container {
+.contenedor {
   max-width: 992px;
-  padding: 0; }
+  height: 100%;
+  width: 100%; }
 
 .txt_destacado {
   color: #005cb3;
@@ -55,7 +56,11 @@ p {
   font-family: font-main, serif; }
 
 main {
-  padding: 60px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
 
 button {
   color: white;
@@ -93,28 +98,27 @@ footer {
 .home_main {
   color: white;
   height: 100vh;
-  padding: 0px 60px;
-  display: flex;
-  align-items: center;
   background-image: url("../resources/space2.jpg");
   background-size: cover;
   background-position: center; }
-  .home_main div {
-    max-width: 700px;
-    margin-left: 5%; }
-    .home_main div p {
-      font-size: 20px;
-      font-weight: lighter;
-      padding: 20px 0px; }
-  .home_main .home_button {
-    color: white;
-    border: solid 1px white;
-    background-color: #51515125;
-    border-radius: 10px;
-    padding: 10px 30PX;
-    font-weight: 600; }
-    .home_main .home_button:hover {
-      background-color: rgba(255, 255, 255, 0.074); }
+  .home_main .contenedor {
+    align-items: flex-start; }
+    .home_main .contenedor .contenido {
+      max-width: 700px;
+      padding: 150px 0; }
+      .home_main .contenedor .contenido p {
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 20px 0px; }
+      .home_main .contenedor .contenido .home_button {
+        color: white;
+        border: solid 1px white;
+        background-color: #51515125;
+        border-radius: 10px;
+        padding: 10px 30PX;
+        font-weight: 600; }
+        .home_main .contenedor .contenido .home_button:hover {
+          background-color: rgba(255, 255, 255, 0.074); }
 
 .container .autor_div {
   display: flex; }
@@ -182,11 +186,9 @@ footer {
   .contacto_body .contacto_form {
     margin-left: 30px; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .contacto_body {
-    grid-template-columns: 1fr; } }
-
-@media (max-width: 960px) {
-  .contacto_form {
-    margin-left: 0px;
-    max-width: 400px; } }
+    grid-template-columns: 1fr; }
+    .contacto_body .contacto_form {
+      margin-left: 0px;
+      max-width: 400px; } }

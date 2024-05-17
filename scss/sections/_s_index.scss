@@ -1,0 +1,37 @@
+.home_main {
+    color: white;
+    height: 100vh;
+    background-image: url('../resources/space2.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .contenedor {
+        align-items: flex-start;
+
+
+        .contenido {
+            max-width: 700px;
+            padding: 150px 0;
+
+            p {
+                font-size: 20px;
+                font-weight: lighter;
+                padding: 20px 0px;
+            }
+
+            .home_button {
+                color: white;
+                border: solid 1px white;
+                background-color: $blacktranspa;
+                border-radius: 10px;
+                padding: 10px 30PX;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: $whitetranspa;
+                }
+            }
+        }
+
+    }
+}

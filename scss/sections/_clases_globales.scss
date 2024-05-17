@@ -8,9 +8,10 @@ p {
     font-size: 16px;
 }
 
-.container {
+.contenedor {
     max-width: 992px;
-    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .txt_destacado {
@@ -23,7 +24,11 @@ p {
 
 // ESTILOS ELEMENTOS
 main {
-    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 button {
