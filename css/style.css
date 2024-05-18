@@ -1,6 +1,10 @@
 @font-face {
   font-family: font-main;
-  src: url("../resources/fonts/Barlow-Regular.ttf"); }
+  src: url("../resources/fonts/barlow-regular.ttf"); }
+
+@font-face {
+  font-family: font-main-med;
+  src: url("../resources/fonts/barlow-medium.ttf"); }
 
 * {
   margin: 0px;
@@ -37,8 +41,14 @@
   animation-delay: 1s; }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: font-main, serif; }
+
+h5,
+h6 {
+  font-family: font-main-med, serif; }
 
 p {
   font-size: 16px; }
@@ -49,11 +59,11 @@ p {
   width: 100%; }
 
 .txt_destacado {
+  font-family: font-main, serif;
   color: #005cb3;
   font-size: 18px;
   font-weight: bold;
-  font-style: italic;
-  font-family: font-main, serif; }
+  font-style: italic; }
 
 main {
   display: flex;
@@ -182,9 +192,10 @@ footer {
 
 .contacto_body {
   display: grid;
-  grid-template-columns: 500px 400px; }
+  grid-template-columns: 500px 400px;
+  margin: 60px 0; }
   .contacto_body .contacto_form {
-    margin-left: 30px; }
+    margin-left: 40px; }
 
 @media (max-width: 992px) {
   .contacto_body {
