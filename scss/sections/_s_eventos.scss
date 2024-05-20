@@ -1,7 +1,10 @@
 .eventos_main {
-    padding-bottom: 0;
+    height: 100vh;
+    background-image: url('../resources/space1.jpg');
+    background-size: cover;
+    background-position: center;
 
-    .eventos-prox {
+    .eventos {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, 1fr);
@@ -17,34 +20,39 @@
             padding: 20px;
             margin: 0px 30px 30px 0px;
             width: 250px;
+            background-color: white;
+        }
 
-            h3 {
-                font-family: font-main, serif;
-                font-weight: 700;
-            }
+        h4 {
+            margin-bottom: 0px;
+        }
 
-            p {
-                text-align: left;
-                margin-bottom: 0;
-            }
+        p {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
 
-            .subinfo {
-                color: $grey_m;
-                font-size: 20px;
-            }
+        .subinfo {
+            color: $grey_m;
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .eventos_past {
+            background-color: $grey_s;
         }
     }
 }
 
 // Media Queries
 @media (max-width: 900px) {
-    .eventos-prox {
+    .eventos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .eventos-prox {
+    .eventos {
         grid-template-columns: repeat(1, 1fr);
     }
 }

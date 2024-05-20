@@ -1,7 +1,7 @@
 // NAVBAR
 header {
-    background-color: $whitish0;
-    border-bottom: 2px $whitish solid;
+    background-color: $whitish;
+    border-bottom: 2px $grey_s solid;
 
     nav {
         padding: 0px 40px !important;
@@ -37,5 +37,5 @@ header {
 footer {
     font-size: 12px;
     padding: 20px;
-    border-top: 1px solid $whitish;
+    border-top: 1px solid $grey_s;
 }

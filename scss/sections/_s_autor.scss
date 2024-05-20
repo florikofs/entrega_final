@@ -1,16 +1,30 @@
-.container {
+.autor_main {
+    height: 100vh;
+    background-image: url('../resources/space1.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+
     .autor_div {
         display: flex;
+        background-color: white;
+        max-width: 992px;
 
         div {
             img {
-                height: 90vh;
+                height: 650px;
             }
         }
 
         .autor_div_text {
             padding: 40px 20px;
-            max-width: 650px;
         }
+    }
+}
+
+// Media Queries
+@media (max-width: 850px) {
+    .autor_div {
+        flex-direction: column;
     }
 }

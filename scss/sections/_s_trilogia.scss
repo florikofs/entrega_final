@@ -1,16 +1,24 @@
 .trilogia_main {
-    background-color: black;
-    padding: 60px 60px 80px 60px;
+    background-image: url('../resources/space1.jpg');
+    background-size: cover;
+    background-position: center;
 
     .trilogia_div {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin: 60px;
 
         .card {
             border: none;
             margin: 20px;
+            @extend .card_anima;
+
+            &:hover {
+                transform: scale(1.04);
+                border: none;
+            }
 
             .card-body {
                 padding: 20px;

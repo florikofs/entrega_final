@@ -14,6 +14,15 @@
 }
 
 // ANIMACIONES
+.card_anima{
+    transition: all 0.25s;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    cursor: default;
+}
+
 @mixin plop ($delay){
     animation-name: entrada;
     animation-iteration-count: 1;

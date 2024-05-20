@@ -19,6 +19,14 @@
   100% {
     transform: scale(1); } }
 
+.card_anima, .trilogia_main .trilogia_div .card {
+  transition: all 0.25s;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  cursor: default; }
+
 .tapa_anima1 {
   animation-name: entrada;
   animation-iteration-count: 1;
@@ -42,10 +50,10 @@
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: font-main, serif; }
 
+h4,
 h5,
 h6 {
   font-family: font-main-med, serif; }
@@ -130,25 +138,41 @@ footer {
         .home_main .contenedor .contenido .home_button:hover {
           background-color: rgba(255, 255, 255, 0.074); }
 
-.container .autor_div {
-  display: flex; }
-  .container .autor_div div img {
-    height: 90vh; }
-  .container .autor_div .autor_div_text {
-    padding: 40px 20px;
-    max-width: 650px; }
+.autor_main {
+  height: 100vh;
+  background-image: url("../resources/space1.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start; }
+  .autor_main .autor_div {
+    display: flex;
+    background-color: white;
+    max-width: 992px; }
+    .autor_main .autor_div div img {
+      height: 650px; }
+    .autor_main .autor_div .autor_div_text {
+      padding: 40px 20px; }
+
+@media (max-width: 850px) {
+  .autor_div {
+    flex-direction: column; } }
 
 .trilogia_main {
-  background-color: black;
-  padding: 60px 60px 80px 60px; }
+  background-image: url("../resources/space1.jpg");
+  background-size: cover;
+  background-position: center; }
   .trilogia_main .trilogia_div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 60px; }
     .trilogia_main .trilogia_div .card {
       border: none;
       margin: 20px; }
+      .trilogia_main .trilogia_div .card:hover {
+        transform: scale(1.04);
+        border: none; }
       .trilogia_main .trilogia_div .card .card-body {
         padding: 20px; }
         .trilogia_main .trilogia_div .card .card-body h5 {
@@ -156,14 +180,17 @@ footer {
           font-weight: bolder; }
 
 .eventos_main {
-  padding-bottom: 0; }
-  .eventos_main .eventos-prox {
+  height: 100vh;
+  background-image: url("../resources/space1.jpg");
+  background-size: cover;
+  background-position: center; }
+  .eventos_main .eventos {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     max-width: 900px;
     margin-top: 40px; }
-    .eventos_main .eventos-prox .eventos_card {
+    .eventos_main .eventos .eventos_card {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -171,23 +198,26 @@ footer {
       border-radius: 8px;
       padding: 20px;
       margin: 0px 30px 30px 0px;
-      width: 250px; }
-      .eventos_main .eventos-prox .eventos_card h3 {
-        font-family: font-main, serif;
-        font-weight: 700; }
-      .eventos_main .eventos-prox .eventos_card p {
-        text-align: left;
-        margin-bottom: 0; }
-      .eventos_main .eventos-prox .eventos_card .subinfo {
-        color: #808080;
-        font-size: 20px; }
+      width: 250px;
+      background-color: white; }
+    .eventos_main .eventos h4 {
+      margin-bottom: 0px; }
+    .eventos_main .eventos p {
+      margin-bottom: 10px;
+      font-size: 12px; }
+    .eventos_main .eventos .subinfo {
+      color: #808080;
+      font-size: 20px;
+      line-height: 1; }
+    .eventos_main .eventos .eventos_past {
+      background-color: #d8d8d8; }
 
 @media (max-width: 900px) {
-  .eventos-prox {
+  .eventos {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 600px) {
-  .eventos-prox {
+  .eventos {
     grid-template-columns: repeat(1, 1fr); } }
 
 .contacto_body {
