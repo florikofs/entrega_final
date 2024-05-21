@@ -15,12 +15,6 @@ p {
     font-size: 16px;
 }
 
-.contenedor {
-    max-width: 992px;
-    height: 100%;
-    width: 100%;
-}
-
 .txt_destacado {
     font-family: font-main, serif;
     color: $maincolor;
@@ -30,13 +24,19 @@ p {
 }
 
 // ESTILOS ELEMENTOS
-// main {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100%;
-// }
+.contenedor {
+    max-width: 992px;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 button {
     color: white;
