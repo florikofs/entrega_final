@@ -4,14 +4,14 @@
     background-image: url('../resources/space2.jpg');
     background-size: cover;
     background-position: center;
+    padding: 0px 60px;
 
     .contenedor {
         align-items: flex-start;
 
-
         .contenido {
             max-width: 700px;
-            padding: 150px 0;
+            padding: 150px 0px;
 
             p {
                 font-size: 20px;

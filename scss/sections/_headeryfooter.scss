@@ -8,7 +8,7 @@ header {
 
         .container-fluid {
             max-width: 992px;
-            
+
             a {
                 font-family: font-main, serif;
                 font-weight: 800;
@@ -35,7 +35,28 @@ header {
 
 // FOOTER
 footer {
-    font-size: 12px;
     padding: 20px;
     border-top: 1px solid $grey_s;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        align-content: center;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .redes {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            li {
+                margin: 0px 20px;
+            }
+        }
+    }
 }
