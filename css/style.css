@@ -51,18 +51,18 @@
 h1,
 h2,
 h3 {
-  font-family: font-main, serif; }
+  font-family: font-main; }
 
 h4,
 h5,
 h6 {
-  font-family: font-main-med, serif; }
+  font-family: font-main-med; }
 
 p {
   font-size: 16px; }
 
 .txt_destacado {
-  font-family: font-main, serif;
+  font-family: font-main;
   color: #005cb3;
   font-size: 18px;
   font-weight: bold;
@@ -236,11 +236,11 @@ footer {
   .contacto_main .contacto_body {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 32px;
+    gap: 48px;
     margin: 60px 0;
     max-width: 992px; }
     .contacto_main .contacto_body .info .locales {
-      margin: 24px 0px; }
+      margin: 48px 0px; }
       .contacto_main .contacto_body .info .locales h3 {
         color: #005cb3; }
     .contacto_main .contacto_body .contacto_form {
@@ -255,10 +255,12 @@ footer {
     grid-template-columns: 1fr;
     max-width: 100%; } }
 
+@media (max-width: 570px) {
+  .contacto_main {
+    padding: 0px 20px; } }
+
 .sinopsis_main {
   padding: 0px 60px;
   height: 100vh; }
-  .sinopsis_main .contenedor {
-    align-items: flex-start; }
-    .sinopsis_main .contenedor h3 {
-      margin: 30px 0px 10px 0px; }
+  .sinopsis_main .contenedor h3 {
+    margin: 30px 0px 10px 0px; }
