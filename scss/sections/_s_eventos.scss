@@ -6,8 +6,8 @@
 
     .eventos {
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         max-width: 900px;
         margin-top: 40px;
 
@@ -46,13 +46,19 @@
 
 // Media Queries
 @media (max-width: 900px) {
-    .eventos {
-        grid-template-columns: repeat(2, 1fr);
+    .eventos_main {
+        height: auto;
+
+        .eventos {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
 @media (max-width: 600px) {
-    .eventos {
-        grid-template-columns: repeat(1, 1fr);
+    .eventos_main {
+        .eventos {
+            grid-template-columns: 1fr;
+        }
     }
 }

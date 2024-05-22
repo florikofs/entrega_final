@@ -6,19 +6,20 @@
         @extend .contenedor_hoja;
     }
 
-        .info {
-            margin: 48px 0px;
+    .info {
+        margin: 48px 0px;
 
-            h3 {
-                color: $maincolor;
-            }
+        h3 {
+            color: $maincolor;
         }
+    }
 }
 
 // Media Queries
 @media (max-width: 768px) {
-    // NO ANDA
-    .sinopsis_content {
-        padding: 60px 60px 60px 60px;
+    .sinopsis_main {
+        .sinopsis_content {
+            padding: 60px 60px 60px 60px;
+        }
     }
 }

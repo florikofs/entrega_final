@@ -33,3 +33,17 @@
         }
     }
 }
+
+@media (max-width: 410px) {
+    .autor_main {
+        .autor_content {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            .img_contenedor {
+                overflow: auto;
+                height: 100%;
+            }
+        }
+    }
+}
