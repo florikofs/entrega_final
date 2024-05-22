@@ -3,24 +3,33 @@
 
     .autor_content {
         @extend .contenedor_hoja;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-        div {
+        .img_contenedor {
+
             img {
-                max-height: 650px;
+                width: 100%;
             }
         }
 
         .autor_content_text {
             padding: 40px;
+            text-align: left;
         }
     }
 }
 
 // Media Queries
 @media (max-width: 900px) {
-    .autor_content {
-        flex-direction: column;
-        align-items: normal;
+    .autor_main {
+        .autor_content {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+
+            .img_contenedor {
+                overflow: hidden;
+            }
+        }
     }
 }
