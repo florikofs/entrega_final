@@ -30,6 +30,19 @@ p {
     width: 100%;
 }
 
+.contenedor_hoja {
+    background-color: white;
+    max-width: 992px;
+}
+
+.fondo_space {
+    // height: 100vh;
+    background-image: url('../resources/space1.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -50,4 +63,3 @@ button {
         background-color: $maincolordark;
     }
 }
-

@@ -11,8 +11,9 @@
         margin: 60px;
 
         .card {
-            border: none;
+            border: solid 1px rgb(70, 70, 70);
             margin: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.322);
             @extend .card_anima;
 
             &:hover {
@@ -22,11 +23,6 @@
 
             .card-body {
                 padding: 20px;
-
-                h5 {
-                    font-family: font-main, serif;
-                    font-weight: bolder;
-                }
             }
         }
     }

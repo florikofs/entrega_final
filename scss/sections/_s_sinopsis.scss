@@ -1,12 +1,24 @@
 .sinopsis_main {
-    padding: 0px 60px;
-    height: 100vh;
+    @extend .fondo_space;
 
-    .contenedor{
-        // align-items: flex-start;
+    .sinopsis_content {
+        padding: 60px 200px 60px 60px;
+        @extend .contenedor_hoja;
+    }
 
-        h3{
-            margin: 30px 0px 10px 0px;
+        .info {
+            margin: 48px 0px;
+
+            h3 {
+                color: $maincolor;
+            }
         }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    // NO ANDA
+    .sinopsis_content {
+        padding: 60px 60px 60px 60px;
     }
 }
