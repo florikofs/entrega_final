@@ -166,7 +166,7 @@ footer {
   .autor_main .autor_content .img_contenedor img {
     width: 100%; }
   .autor_main .autor_content .autor_content_text {
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     text-align: left; }
 
 @media (max-width: 900px) {
