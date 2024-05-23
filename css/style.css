@@ -1,10 +1,10 @@
 @font-face {
   font-family: font-main;
-  src: url("../../resources/fonts/Barlow-Regular.ttf.ttf"); }
+  src: url("../resources/fonts/Barlow-Regular.ttf.ttf"); }
 
 @font-face {
   font-family: font-main-med;
-  src: url("../../resources/fonts/barlow-medium.ttf"); }
+  src: url("../resources/fonts/barlow-medium.ttf"); }
 
 * {
   margin: 0px;
