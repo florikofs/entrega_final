@@ -21,25 +21,30 @@
             margin: 0px 30px 30px 0px;
             width: 250px;
             background-color: white;
-        }
 
-        h4 {
-            margin-bottom: 0px;
-        }
 
-        p {
-            margin-bottom: 10px;
-            font-size: 12px;
-        }
+            h4 {
+                margin-bottom: 0px;
+            }
 
-        .subinfo {
-            color: $grey_m;
-            font-size: 20px;
-            line-height: 1;
+            p {
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+
+            .subinfo {
+                color: $maincolor;
+                font-size: 20px;
+                line-height: 1;
+            }
         }
 
         .eventos_past {
             background-color: $grey_s;
+
+            .subinfo {
+                color: $grey_m;
+            }
         }
     }
 }
@@ -57,8 +62,13 @@
 
 @media (max-width: 600px) {
     .eventos_main {
+
         .eventos {
             grid-template-columns: 1fr;
+
+            .eventos_card {
+                margin: 0px 0px 30px 0px;
+            }
         }
     }
 }

@@ -19,7 +19,15 @@
 @media (max-width: 768px) {
     .sinopsis_main {
         .sinopsis_content {
-            padding: 60px 60px 60px 60px;
+            padding: 60px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .sinopsis_main {
+        .sinopsis_content {
+            padding: 60px 20px;
         }
     }
 }
